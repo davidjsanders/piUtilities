@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo ""
+echo "Cluster temparatures at "$(date +"%H:%M:%S %Z")
+echo "dasander-pi-master  : "$(ssh pi-master /opt/vc/bin/vcgencmd measure_temp)
+echo "dasander-pi-worker1 : "$(ssh pi-worker1 /opt/vc/bin/vcgencmd measure_temp)
+echo "dasander-pi-worker2 : "$(ssh pi-worker2 /opt/vc/bin/vcgencmd measure_temp)
+echo ""
